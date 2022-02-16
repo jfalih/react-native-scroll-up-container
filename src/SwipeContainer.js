@@ -3,24 +3,24 @@ import { StyleSheet, View, Dimensions } from 'react-native';
 import { PanGestureHandler } from 'react-native-gesture-handler';
 import Animated, { useAnimatedGestureHandler, useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 const SwipeContainer = ({
-    useLine,
-
-    translateY,
-    overValue, 
+    useLine = true,
+    containerStyle,
+    translateY = 300,
+    overValue = 50, 
 
     topComponent,
     topComponentStyle,
     
-    bottomComponent,
+    children,
     bottomComponentStyle,
 
-    limitTopValue,
-    limitBottomValue,
+    limitTopValue = 50,
+    limitBottomValue = 250,
 }) => {
     // Define default useSharedValue
     const start = useSharedValue(0);
-    const position = useSharedValue(translateY ? translateY : 300);
-    const height = useSharedValue(translateY ? translateY + overValue : 350);
+    const position = useSharedValue(translateY);
+    const height = useSharedValue(translateY + overValue);
 
     // Get height of container
     const [viewHeight, setViewHeight] = React.useState(0);
@@ -90,7 +90,7 @@ const SwipeContainer = ({
                             <View style={style.line}></View>
                         </View>
                     }
-                    {bottomComponent}
+                    {children}
                 </Animated.View>
             </PanGestureHandler>
         </View>
@@ -105,6 +105,7 @@ const style = StyleSheet.create({
         width:'100%',
     },
     bottomStyle:{
+        position: 'absolute',
         width: '100%',
         height: 800,
         backgroundColor:'#fff'
