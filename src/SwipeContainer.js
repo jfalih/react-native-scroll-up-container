@@ -73,7 +73,7 @@ const SwipeContainer = ({
       height: height.value,
     }));
     return(
-        <View style={styles.container}>
+        <View style={containerStyle ? containerStyle : style.container}>
             <Animated.View style={[topComponentStyle ? topComponentStyle : style.topStyle, animatedTop]}>
                 {topComponent}
             </Animated.View>
@@ -98,6 +98,9 @@ const SwipeContainer = ({
 };
 
 const style = StyleSheet.create({
+    container:{
+        flex:1,
+    },
     topStyle : {
         height: height.value,
         width:'100%',

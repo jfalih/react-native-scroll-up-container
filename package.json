@@ -1,5 +1,5 @@
 {
-  "name": "yes",
+  "name": "react-native-scroll-up-container",
   "version": "1.0.0",
   "description": "React Native Swipe Scroll Up And Down Container",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jfalih/react-native-swipe-container.git"
+    "url": "git+https://github.com/jfalih/react-native-scroll-up-container.git"
   },
   "keywords": [
     "react-native swipe container",
@@ -23,7 +23,7 @@
   "author": "Jan Falih Fadhillah",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jfalih/react-native-swipe-container/issues"
+    "url": "https://github.com/jfalih/react-native-scroll-up-container/issues"
   },
-  "homepage": "https://github.com/jfalih/react-native-swipe-container#readme"
+  "homepage": "https://github.com/jfalih/react-native-scroll-up-container#readme"
 }
