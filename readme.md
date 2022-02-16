@@ -18,14 +18,14 @@ Before you install this package, this package requires react-native-gesture-hand
 After that you can install this package.
 
 ```bash
-  npm i react-native-scroll-up
+  npm i react-native-scroll-up-container
 ```
 ## Usage/Examples
 
 ```javascript
 import React from 'react'
 import { View } from 'react-native'
-import SwipeContainer from 'react-native-scroll-up'
+import SwipeContainer from 'react-native-scroll-up-container'
 
 function App() {
   return <SwipeContainer 
@@ -35,13 +35,13 @@ function App() {
     }}
     translateY={300}
     overValue={50}
-    topComponent={{
+    topComponent={
       <View style={{
         flex:1,
         backgroundColor:'blue'
       }}>
       </View>
-    }}
+    }
     limitTopValue={50}
     limitBottomValue={250}
   >
@@ -70,7 +70,7 @@ function App() {
 | `children` | `Component` | For customize children of container  |
 
 ## Contributing
-- Fork it ( https://github.com/jfalih/react-native-scroll-up/fork )
+- Fork it ( https://github.com/jfalih/react-native-scroll-up-container/fork )
 - Create your feature branch (`git checkout -b my-new-feature`)
 - Commit your changes (`git commit -am 'Add some feature'`)
 - Push to the branch (`git push origin my-new-feature`)
