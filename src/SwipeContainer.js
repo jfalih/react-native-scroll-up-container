@@ -79,7 +79,7 @@ const SwipeContainer = ({
             </Animated.View>
             <PanGestureHandler onGestureEvent={gesture}>
                 <Animated.View onLayout={(event) => {
-                    var { height } = event.nativeEvent.layout;
+                    const { height } = event.nativeEvent.layout;
                     setViewHeight(height);
                     }} style={[
                     bottomComponentStyle ? bottomComponentStyle : style.bottomStyle,
@@ -102,7 +102,6 @@ const style = StyleSheet.create({
         flex:1,
     },
     topStyle : {
-        height: height.value,
         width:'100%',
     },
     bottomStyle:{
