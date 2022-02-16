@@ -3,7 +3,7 @@
 
 React native scroll up container is a react native component with scroll up animation, you will see an example below.
 
-![Default](https://media.giphy.com/media/etEWUFiDDMPV1eqA1s/giphy.gif)
+![Default](https://media.giphy.com/media/3SsAp23SFICXT3vSJP/giphy.gif)
 
 ![With Children](https://media.giphy.com/media/etEWUFiDDMPV1eqA1s/giphy.gif)
 

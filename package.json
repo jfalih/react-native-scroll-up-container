@@ -1,6 +1,6 @@
 {
   "name": "react-native-scroll-up-container",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "React Native Swipe Scroll Up And Down Container",
   "main": "index.js",
   "scripts": {
